@@ -1,40 +1,154 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.header{
-    display: flex;
-    gap: 232.5px;
+html {
+    --primaryColor: #19213D;
+    --prinaryFont: Inter;
+}
+
+.header {
     padding: 21.84px 0;
 }
 
-.list ul{
+.container {
+    margin: 0 auto;
+    width: calc(100% - 20%);
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu {
+    display: none;
+}
+
+.list ul {
     display: flex;
     gap: 60px;
     list-style-type: none;
 }
 
-.icons ul{
+.icons ul {
     display: flex;
     gap: 24px;
     list-style-type: none;
 }
 
+.Shopping-cart {
+    display: none;
+}
 
-.collection_section{
-    display: flex;
+
+.collection_section {
     flex-wrap: wrap;
     gap: 30px;
-    text-align: center;
     padding-top: 40px;
     padding-bottom: 40px;
 }
 
-.collection{
+.collection {
     width: calc((100% - 90px)/4);
+    text-align: center;
 }
-img{
+
+img {
     width: 100%;
+}
+
+a {
+    text-decoration: none;
+    font-family: var(--prinaryFont);
+    font-size: 14px;
+    color: var(--primaryColor);
+}
+
+h2 {
+    text-transform: uppercase;
+    color: var(--primaryColor);
+}
+
+@media screen and (min-width:0) and (max-width:400px) {
+    .list {
+        display: none;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .Shopping-cart {
+        display: flex;
+    }
+
+    .collection_section .row {
+        flex-direction: column;
+    }
+
+    .collection {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (min-width:401px) and (max-width:770px) {
+
+    .list {
+        display: none;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .Shopping-cart {
+        display: flex;
+    }
+
+    .collection {
+        width: calc((100% - 30px)/2);
+    }
+
+    h2 {
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (min-width:771px) and (max-width:960px) {
+
+    .list ul {
+        gap: 30px;
+    }
+
+    .icons ul {
+        gap: 15px;
+    }
+
+    .collection {
+        width: calc((100% - 60px)/3);
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
 }
