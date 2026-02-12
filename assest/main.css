@@ -27,6 +27,17 @@ body {
     padding: 21.84px 0;
 }
 
+.header a {
+    text-decoration: none;
+    font-family: var(--prinaryFont);
+    font-size: 14px;
+    color: var(--primaryColor);
+}
+
+.header a:hover{
+    color: #2388FF;
+}
+
 .hero {
     background-color: #8f98b8;
     height: 600px;
@@ -59,10 +70,15 @@ body {
     list-style-type: none;
 }
 
+
 .icons ul {
     display: flex;
     gap: 24px;
     list-style-type: none;
+}
+
+.icons a{
+    cursor: pointer;
 }
 
 .Shopping-cart {
@@ -116,13 +132,6 @@ body {
 .collection {
     width: calc((100% - 90px)/4);
     text-align: center;
-}
-
-.header a {
-    text-decoration: none;
-    font-family: var(--prinaryFont);
-    font-size: 14px;
-    color: var(--primaryColor);
 }
 
 .collection h2 {
@@ -182,6 +191,7 @@ body {
     width: calc((100% - 90px)/4);
 }
 
+
 .bestSellers h2 {
     font-size: 30px;
     font-weight: 700;
@@ -226,6 +236,11 @@ body {
     font-size: 14px;
     font-weight: 600;
     width: 100%;
+    cursor: pointer;
+}
+
+.item:hover .add-to-cart{
+    background-color: #2388FF;
 }
 
 img {
