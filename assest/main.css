@@ -25,6 +25,10 @@ body {
 
 .header {
     padding: 21.84px 0;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 9;
 }
 
 .header a {
@@ -35,13 +39,35 @@ body {
     transition-duration: 1s;
 }
 
+.icons .Shopping_item a {
+    position: relative;
+}
+
+.icons .Shopping_item a::after {
+    content: '3';
+    position: absolute;
+    top: -10px;
+    right: -8px;
+    background-color: #9f7374;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+
+
 .header a:hover {
-    color: #2388FF;
+    color: #3f4d36;
 }
 
 .hero {
-    background-color: #8f98b8;
-    height: 600px;
+    background-image: url(./img/heroImg.png);
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -106,6 +132,24 @@ body {
     .Shopping-cart {
         display: flex;
     }
+
+    .Shopping-cart a {
+        position: relative;
+    }
+
+    .Shopping-cart a::after {
+        content: '3';
+        position: absolute;
+        top: -10px;
+        right: -8px;
+        background-color: #9f7374;
+        width: 15px;
+        height: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
 }
 
 @media screen and (min-width:771px) and (max-width:1100px) {
@@ -136,10 +180,50 @@ body {
 
 .collection {
     text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.badge_sale {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-color: rgba(255, 0, 0, 0.669);
+    padding: 6px 8px;
+    z-index: 1;
+}
+
+.collection .img {
+    display: block;
+}
+
+.collection_details {
+    position: absolute;
+    inset: 0;
+    background-color: #896c5c96;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    gap: 10px;
 }
 
 .collection h2 {
-    color: var(--primaryColor);
+    color: black;
+    text-transform: uppercase;
+}
+
+.collection_details a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    text-transform: capitalize;
+}
+
+.collection:hover .collection_details {
+    opacity: 1;
+    transition: 0.6s;
 }
 
 .bestSellers {
@@ -155,6 +239,10 @@ body {
 
 .bestSellers .item {
     text-align: left;
+    box-shadow: 0px 0px 7px 9px rgb(220, 221, 218);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 
@@ -168,6 +256,13 @@ body {
 
 .bestSellers .item-content {
     margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.bestSellers .row {
+    align-items: stretch;
 }
 
 .bestSellers h3 {
@@ -203,7 +298,8 @@ body {
     font-weight: 600;
     width: 100%;
     cursor: pointer;
-    transition: background-color 1s, color 1s ;
+    transition: background-color 1s, color 1s;
+    margin-top: auto;
 }
 
 .item:hover .add-to-cart {
@@ -212,7 +308,7 @@ body {
 }
 
 
-.discover{
+.discover {
     text-align: center;
     padding: 80px 0;
 }
@@ -225,6 +321,16 @@ body {
 
 .discover .discover_item {
     text-align: left;
+    box-shadow: 0px 0px 7px 9px rgb(220, 221, 218);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.discover .discover-content{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .discover h2 {
@@ -273,7 +379,8 @@ body {
     font-weight: 600;
     width: 100%;
     cursor: pointer;
-    transition: background-color 1s, color 1s ;
+    transition: background-color 0.6s, color 0.6s;
+    margin-top: auto;
 }
 
 .discover_item:hover .add-to-cart {
