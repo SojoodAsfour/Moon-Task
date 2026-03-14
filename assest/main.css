@@ -47,7 +47,7 @@ body {
     font-family: var(--prinaryFont);
     font-size: 14px;
     color: var(--primaryColor);
-    transition-duration: 1s;
+    transition-duration: 0.7s;
 }
 
 .icons .Shopping_item a {
@@ -630,8 +630,7 @@ body {
 }
 
 
-.blog{
-    padding: 30px 0;
+.blog {
     text-align: center;
 }
 
@@ -653,7 +652,7 @@ body {
     gap: 20px;
 }
 
-.blog-content span{
+.blog-content span {
     color: #6d6c6c;
     font-weight: 600;
     letter-spacing: 2px;
@@ -668,7 +667,7 @@ body {
     max-width: 400px;
 }
 
-.blog-content  a {
+.blog-content a {
     color: #3f4d36;
 }
 
@@ -677,48 +676,110 @@ body {
     height: 100%;
 }
 
-@media screen and (min-width:0) and (max-width:700px){
+@media screen and (min-width:0) and (max-width:700px) {
 
-    .blog .row{
+    .blog .row {
         grid-template-columns: 1fr;
     }
 
-    .blog-content{
+    .blog-content {
         padding: 50px 25px;
         gap: 16px;
     }
 
-    .blog-content h3{
+    .blog-content h3 {
         max-width: 300px;
         font-size: 28px;
     }
 
-    .blog-content p{
+    .blog-content p {
         max-width: 280px;
         font-size: 14px;
     }
 
 }
 
-@media screen and (min-width:701px) and (max-width:1100px){
+@media screen and (min-width:701px) and (max-width:1100px) {
 
-    .blog-content{
+    .blog-content {
         padding: 40px 25px;
         gap: 14px;
     }
 
-    .blog-content h3{
+    .blog-content h3 {
         max-width: 260px;
         font-size: 22px;
     }
 
-    .blog-content p{
+    .blog-content p {
         max-width: 290px;
         font-size: 12px;
     }
 
 }
 
+.sign-up {
+    padding: 40px 0;
+}
+
+.sign-up .row {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.sign-up span {
+    color: #222a1d;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.sign-up-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.sign-up-form input {
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid #222a1d;
+    padding: 10px;
+    width: 300px;
+}
+
+.sign-up-form input:focus {
+    outline: none;
+}
+
+.sign-up-form button {
+    padding: 10px 25px;
+    border: 1px solid #222a1d;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: 600px;
+    transition-duration: 0.7s;
+}
+
+.sign-up-form button:hover {
+    background-color: #222a1d;
+    color: white;
+}
+
+@media screen and (max-width:700px) {
+
+    .sign-up h2 {
+        font-size: 22px;
+    }
+
+    .sign-up-form input {
+        width: 220px;
+    }
+
+}
 
 @keyframes slideFromToLeft {
     from {
