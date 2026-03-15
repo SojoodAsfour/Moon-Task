@@ -22,6 +22,10 @@ body {
     font-family: var(--prinaryFont);
 }
 
+main {
+    padding-top: 40px;
+}
+
 .container {
     margin: 0 auto;
     width: calc(100% - 330px);
@@ -166,5 +170,103 @@ body {
 
     .icons ul {
         gap: 15px;
+    }
+}
+
+.hero {
+    background-image: url(../img/contact-hero.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    align-items: stretch;
+}
+
+.hero-content {
+    background-color: #3A3845;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    margin-left: 100px;
+}
+
+.hero-content h1 {
+    color: white;
+    font-size: 38px;
+    border-bottom: 1px solid white;
+    padding-bottom: 20px;
+}
+
+.hero-content p {
+    color: white;
+    font-size: 14px;
+}
+
+.contact-social {
+    display: flex;
+    gap: 15px;
+}
+
+.contact-social img {
+    width: 30px;
+}
+
+@media screen and (min-width:0) and (max-width:710px) {
+
+    .hero {
+        background-image: none;
+        grid-template-columns: 1fr;
+        grid-template-rows: 320px auto;
+    }
+
+    .hero::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 320px;
+        background-image: url(../img/hero-contact-mobile.png);
+        background-size: cover;
+        background-position: center;
+        grid-row: 1 / 2;
+    }
+
+    .hero-content {
+        grid-row: 2 / 3;
+        margin-left: 0;
+        padding: 70px 40px;
+    }
+
+    .hero-content h1 {
+        font-size: 35px;
+    }
+
+    .hero-content p {
+        font-size: 12px;
+    }
+
+    .hero-content img {
+        width: 50px;
+    }
+
+    .contact-social img {
+        width: 25px;
+    }
+}
+
+@media screen and (min-width:711px) and (max-width:1150px) {
+
+    .hero-content {
+        margin-left: 60px;
+        padding: 70px 40px;
+        gap: 18px;
+    }
+
+    .hero-content h1 {
+        font-size: 26px;
     }
 }

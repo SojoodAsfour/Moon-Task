@@ -173,7 +173,7 @@ body {
     background-image: url(../img/heroImg.png);
     background-size: cover;
     background-position: center;
-    min-height: 100vh;
+    min-height: calc(100vh - 100px);
     background-attachment: fixed;
     display: grid;
     grid-template-columns: 0.8fr 1.2fr;
@@ -224,7 +224,6 @@ body {
         background-image: none;
         grid-template-columns: 1fr;
         grid-template-rows: 320px auto;
-        background-attachment: scroll;
     }
 
     .hero::before {
