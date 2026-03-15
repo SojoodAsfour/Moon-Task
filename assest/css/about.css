@@ -424,7 +424,7 @@ body {
 
 .team {
     text-align: center;
-    padding-bottom: 120px;
+    padding-bottom: 80px;
 }
 
 .team h2 {
@@ -486,6 +486,74 @@ body {
 
     .team-card p {
         font-size: 15px;
+    }
+
+}
+
+.sign-up {
+    padding: 40px 0;
+}
+
+.sign-up h2{
+    letter-spacing: 1.5px;
+}
+
+.sign-up .row {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.sign-up span {
+    color: #222a1d;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.sign-up-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.sign-up-form input {
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid #222a1d;
+    padding: 10px;
+    width: 300px;
+}
+
+.sign-up-form input:focus {
+    outline: none;
+}
+
+.sign-up-form button {
+    padding: 10px 25px;
+    border: 1px solid #222a1d;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: 500;
+    transition-duration: 0.7s;
+}
+
+.sign-up-form button:hover {
+    background-color: #222a1d;
+    color: white;
+    transform: translateY(-3px);
+}
+
+@media screen and (max-width:700px) {
+
+    .sign-up h2 {
+        font-size: 22px;
+    }
+
+    .sign-up-form input {
+        width: 220px;
     }
 
 }
