@@ -348,7 +348,7 @@ body {
 
 .offer .row {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     align-items: stretch;
     margin: 40px 0;
 }
