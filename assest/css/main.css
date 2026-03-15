@@ -847,7 +847,7 @@ body {
 .footer {
     background-color: #3a3845;
     color: white;
-    padding: 100px 0;
+    padding: 60px 0;
 }
 
 .footer-top {
@@ -860,7 +860,7 @@ body {
 .footer-top::after {
     content: "";
     position: absolute;
-    top: -100px;
+    top: -60px;
     bottom: -60px;
     left: 350px;
     width: 1px;
