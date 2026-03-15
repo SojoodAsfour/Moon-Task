@@ -420,3 +420,72 @@ body {
         font-size: 13px;
     }
 }
+
+
+.team {
+    text-align: center;
+    padding-bottom: 120px;
+}
+
+.team h2 {
+    margin-bottom: 40px;
+    font-size: 28px;
+    letter-spacing: 1.5px;
+}
+
+.team .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.team-card {
+    overflow: hidden;
+}
+
+.team-card h3 {
+    margin-top: 12px;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+.team-card p {
+    font-size: 13px;
+    color: var(--primaryColor);
+}
+
+.team-card img {
+    transition: 0.5s;
+}
+
+.team-card:hover img {
+    transform: scale(1.06);
+}
+
+@media screen and (min-width:0) and (max-width:700px) {
+
+
+    .team h2 {
+        margin-bottom: 30px;
+        font-size: 23px;
+    }
+
+}
+
+@media screen and (min-width:701px) and (max-width:1000px) {
+
+
+    .team h2 {
+        margin-bottom: 30px;
+        font-size: 25px;
+    }
+
+    .team-card h3 {
+        font-size: 16px;
+    }
+
+    .team-card p {
+        font-size: 15px;
+    }
+
+}
