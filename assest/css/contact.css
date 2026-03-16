@@ -364,17 +364,17 @@ main {
     }
 }
 
-.contact-form-section{
+.contact-form-section {
     padding: 50px 80px;
 }
 
-.contact-form .row{
+.contact-form .row {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px 18px;
 }
 
-.form-group{
+.form-group {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -395,7 +395,7 @@ main {
     font-family: var(--prinaryFont);
 }
 
-.form-group textarea{
+.form-group textarea {
     border: 1px solid #24232c;
     outline: none;
     padding: 16px 13px;
@@ -408,7 +408,7 @@ main {
     grid-column: 1 / 3;
 }
 
-.send-btn{
+.send-btn {
     grid-column: 1 / 3;
     border: none;
     background-color: #3A3845;
@@ -476,4 +476,24 @@ main {
         font-size: 14px;
         letter-spacing: 1.2px;
     }
+}
+
+
+.map-section {
+    width: 100%;
+}
+
+.map-section iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+    display: block;
+}
+
+@media screen and (max-width:710px) {
+
+    .map-section iframe {
+        height: 280px;
+    }
+
 }
